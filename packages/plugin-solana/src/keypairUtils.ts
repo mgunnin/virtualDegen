@@ -1,7 +1,7 @@
-import { Keypair, PublicKey } from "@solana/web3.js";
-import { DeriveKeyProvider, TEEMode } from "@elizaos/plugin-tee";
-import bs58 from "bs58";
 import { IAgentRuntime } from "@elizaos/core";
+import { DeriveKeyProvider, TEEMode } from "@elizaos/plugin-tee";
+import { Keypair, PublicKey } from "@solana/web3.js";
+import bs58 from "bs58";
 
 export interface KeypairResult {
     keypair?: Keypair;
@@ -18,7 +18,8 @@ export async function getWalletKey(
     runtime: IAgentRuntime,
     requirePrivateKey: boolean = true
 ): Promise<KeypairResult> {
-    const teeMode = runtime.getSetting("TEE_MODE") || TEEMode.OFF;
+    console.log("Runtime object:", runtime);
+    const teeMode = runtime?.getSetting("TEE_MODE") || TEEMode.OFF;
 
     if (teeMode !== TEEMode.OFF) {
         const walletSecretSalt = runtime.getSetting("WALLET_SECRET_SALT");
@@ -43,8 +44,8 @@ export async function getWalletKey(
     // TEE mode is OFF
     if (requirePrivateKey) {
         const privateKeyString =
-            runtime.getSetting("SOLANA_PRIVATE_KEY") ??
-            runtime.getSetting("WALLET_PRIVATE_KEY");
+            runtime?.getSetting("SOLANA_PRIVATE_KEY") ??
+            runtime?.getSetting("WALLET_PRIVATE_KEY");
 
         if (!privateKeyString) {
             throw new Error("Private key not found in settings");
@@ -70,8 +71,8 @@ export async function getWalletKey(
         }
     } else {
         const publicKeyString =
-            runtime.getSetting("SOLANA_PUBLIC_KEY") ??
-            runtime.getSetting("WALLET_PUBLIC_KEY");
+            runtime?.getSetting("SOLANA_PUBLIC_KEY") ??
+            runtime?.getSetting("WALLET_PUBLIC_KEY");
 
         if (!publicKeyString) {
             throw new Error("Public key not found in settings");
