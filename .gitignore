@@ -57,3 +57,4 @@ coverage
 agent/content
 .cursorrules
 notes/
+scripts/twitter-scraper/*
