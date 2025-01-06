@@ -26,10 +26,9 @@ import {
     ModelProviderName,
     settings,
     stringToUuid,
-    validateCharacterConfig
+    validateCharacterConfig,
 } from "@elizaos/core";
 import { zgPlugin } from "@elizaos/plugin-0g";
-import { birdeyePlugin } from "@elizaos/plugin-birdeye";
 import { bootstrapPlugin } from "@elizaos/plugin-bootstrap";
 import createGoatPlugin from "@elizaos/plugin-goat";
 // import { intifacePlugin } from "@elizaos/plugin-intiface";
@@ -524,10 +523,9 @@ export async function createAgent(
         character,
         // character.plugins are handled when clients are added
         plugins: [
-            birdeyePlugin,
             bootstrapPlugin,
+            webSearchPlugin,
             // newsPlugin,
-            // webSearchPlugin,
             getSecret(character, "CONFLUX_CORE_PRIVATE_KEY")
                 ? confluxPlugin
                 : null,
