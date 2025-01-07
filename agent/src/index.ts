@@ -524,10 +524,10 @@ export async function createAgent(
         character,
         // character.plugins are handled when clients are added
         plugins: [
-            bootstrapPlugin,
-            webSearchPlugin,
             birdeyePlugin,
+            bootstrapPlugin,
             // newsPlugin,
+            webSearchPlugin,
             getSecret(character, "CONFLUX_CORE_PRIVATE_KEY")
                 ? confluxPlugin
                 : null,

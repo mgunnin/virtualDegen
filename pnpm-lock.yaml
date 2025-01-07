@@ -5773,16 +5773,16 @@ packages:
     resolution: {integrity: sha512-GZdkOp2kZTIy5dG9oXqvzUAZiPvDx4C/lMlN6yQjtG9d/+hYa7W8WXTJoOrXE8UdfL9A/sZMl206dmtkl9lwVQ==}
     engines: {node: '>= 18'}
 
-  '@octokit/auth-oauth-app@8.1.1':
-    resolution: {integrity: sha512-5UtmxXAvU2wfcHIPPDWzVSAWXVJzG3NWsxb7zCFplCWEmMCArSZV0UQu5jw5goLQXbFyOr5onzEH37UJB3zQQg==}
+  '@octokit/auth-oauth-app@8.1.2':
+    resolution: {integrity: sha512-3woNZgq5/S6RS+9ZTq+JdymxVr7E0s4EYxF20ugQvgX3pomdPUL5r/XdTY9wALoBM2eHVy4ettr5fKpatyTyHw==}
     engines: {node: '>= 18'}
 
   '@octokit/auth-oauth-device@7.1.2':
     resolution: {integrity: sha512-gTOIzDeV36OhVfxCl69FmvJix7tJIiU6dlxuzLVAzle7fYfO8UDyddr9B+o4CFQVaMBLMGZ9ak2CWMYcGeZnPw==}
     engines: {node: '>= 18'}
 
-  '@octokit/auth-oauth-user@5.1.1':
-    resolution: {integrity: sha512-rRkMz0ErOppdvEfnemHJXgZ9vTPhBuC6yASeFaB7I2yLMd7QpjfrL1mnvRPlyKo+M6eeLxrKanXJ9Qte29SRsw==}
+  '@octokit/auth-oauth-user@5.1.2':
+    resolution: {integrity: sha512-PgVDDPJgZYb3qSEXK4moksA23tfn68zwSAsQKZ1uH6IV9IaNEYx35OXXI80STQaLYnmEE86AgU0tC1YkM4WjsA==}
     engines: {node: '>= 18'}
 
   '@octokit/auth-token@3.0.4':
@@ -5917,14 +5917,14 @@ packages:
     peerDependencies:
       '@octokit/core': '>=3'
 
-  '@octokit/plugin-retry@7.1.2':
-    resolution: {integrity: sha512-XOWnPpH2kJ5VTwozsxGurw+svB2e61aWlmk5EVIYZPwFK5F9h4cyPyj9CIKRyMXMHSwpIsI3mPOdpMmrRhe7UQ==}
+  '@octokit/plugin-retry@7.1.3':
+    resolution: {integrity: sha512-8nKOXvYWnzv89gSyIvgFHmCBAxfQAOPRlkacUHL9r5oWtp5Whxl8Skb2n3ACZd+X6cYijD6uvmrQuPH/UCL5zQ==}
     engines: {node: '>= 18'}
     peerDependencies:
       '@octokit/core': '>=6'
 
-  '@octokit/plugin-throttling@9.3.2':
-    resolution: {integrity: sha512-FqpvcTpIWFpMMwIeSoypoJXysSAQ3R+ALJhXXSG1HTP3YZOIeLmcNcimKaXxTcws+Sh6yoRl13SJ5r8sXc1Fhw==}
+  '@octokit/plugin-throttling@9.3.3':
+    resolution: {integrity: sha512-UlBQ8T7kGzW471PUi0vi3rtXnAfp6sg5Gb13Y9YjKfjcMS1EHr4fLebqGJQo9Iw1ZHSLywg5oC0Oyu2QbNTTHw==}
     engines: {node: '>= 18'}
     peerDependencies:
       '@octokit/core': ^6.0.0
@@ -10042,18 +10042,18 @@ packages:
     peerDependencies:
       webpack: ^5.1.0
 
-  core-js-compat@3.39.0:
-    resolution: {integrity: sha512-VgEUx3VwlExr5no0tXlBt+silBvhTryPwCXRI2Id1PN8WTKu7MreethvddqOubrYxkFdv/RnYrqlv1sFNAUelw==}
+  core-js-compat@3.40.0:
+    resolution: {integrity: sha512-0XEDpr5y5mijvw8Lbc6E5AkjrHfp7eEoPlu36SWeAbcL8fn1G1ANe8DBlo2XoNN89oVpxWwOjYIPVzR4ZvsKCQ==}
 
-  core-js-pure@3.39.0:
-    resolution: {integrity: sha512-7fEcWwKI4rJinnK+wLTezeg2smbFFdSBP6E2kQZNbnzM2s1rpKQ6aaRteZSSg7FLU3P0HGGVo/gbpfanU36urg==}
+  core-js-pure@3.40.0:
+    resolution: {integrity: sha512-AtDzVIgRrmRKQai62yuSIN5vNiQjcJakJb4fbhVw3ehxx7Lohphvw9SGNWKhLFqSxC4ilD0g/L1huAYFQU3Q6A==}
 
   core-js@2.6.12:
     resolution: {integrity: sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==}
     deprecated: core-js@<3.23.3 is no longer maintained and not recommended for usage due to the number of issues. Because of the V8 engine whims, feature detection in old core-js versions could cause a slowdown up to 100x even if nothing is polyfilled. Some versions have web compatibility issues. Please, upgrade your dependencies to the actual version of core-js.
 
-  core-js@3.39.0:
-    resolution: {integrity: sha512-raM0ew0/jJUqkJ0E6e8UDtl+y/7ktFivgWvqw8dNSQeNWoSDLvQ1H/RN3aPXB9tBd4/FhyR4RDPGhsNIMsAn7g==}
+  core-js@3.40.0:
+    resolution: {integrity: sha512-7vsMc/Lty6AGnn7uFpYT56QesI5D2Y/UkgKounk87OP9Z2H9Z8kj6jzcSGAxFmUtDOS0ntK6lbQz+Nsa0Jj6mQ==}
 
   core-util-is@1.0.2:
     resolution: {integrity: sha512-3lqz5YjWTYnW6dlDa5TLaTCcShfar1e40rmcJVwCBJC6mWlFuj0eCHIElmG1g5kyuJ/GD+8Wn4FFCcz4gJPfaQ==}
@@ -21339,7 +21339,7 @@ snapshots:
       babel-plugin-polyfill-corejs2: 0.4.12(@babel/core@7.26.0)
       babel-plugin-polyfill-corejs3: 0.10.6(@babel/core@7.26.0)
       babel-plugin-polyfill-regenerator: 0.6.3(@babel/core@7.26.0)
-      core-js-compat: 3.39.0
+      core-js-compat: 3.40.0
       semver: 6.3.1
     transitivePeerDependencies:
       - supports-color
@@ -21376,7 +21376,7 @@ snapshots:
 
   '@babel/runtime-corejs3@7.26.0':
     dependencies:
-      core-js-pure: 3.39.0
+      core-js-pure: 3.40.0
       regenerator-runtime: 0.14.1
 
   '@babel/runtime@7.26.0':
@@ -22169,7 +22169,7 @@ snapshots:
       cli-table3: 0.6.5
       combine-promises: 1.2.0
       commander: 5.1.0
-      core-js: 3.39.0
+      core-js: 3.40.0
       del: 6.1.1
       detect-port: 1.6.1
       escape-html: 1.0.3
@@ -25521,8 +25521,8 @@ snapshots:
 
   '@octokit/auth-app@7.1.3':
     dependencies:
-      '@octokit/auth-oauth-app': 8.1.1
-      '@octokit/auth-oauth-user': 5.1.1
+      '@octokit/auth-oauth-app': 8.1.2
+      '@octokit/auth-oauth-user': 5.1.2
       '@octokit/request': 9.1.4
       '@octokit/request-error': 6.1.6
       '@octokit/types': 13.6.2
@@ -25530,10 +25530,10 @@ snapshots:
       universal-github-app-jwt: 2.2.0
       universal-user-agent: 7.0.2
 
-  '@octokit/auth-oauth-app@8.1.1':
+  '@octokit/auth-oauth-app@8.1.2':
     dependencies:
       '@octokit/auth-oauth-device': 7.1.2
-      '@octokit/auth-oauth-user': 5.1.1
+      '@octokit/auth-oauth-user': 5.1.2
       '@octokit/request': 9.1.4
       '@octokit/types': 13.6.2
       universal-user-agent: 7.0.2
@@ -25545,7 +25545,7 @@ snapshots:
       '@octokit/types': 13.6.2
       universal-user-agent: 7.0.2
 
-  '@octokit/auth-oauth-user@5.1.1':
+  '@octokit/auth-oauth-user@5.1.2':
     dependencies:
       '@octokit/auth-oauth-device': 7.1.2
       '@octokit/oauth-methods': 5.1.3
@@ -25634,8 +25634,8 @@ snapshots:
 
   '@octokit/oauth-app@7.1.4':
     dependencies:
-      '@octokit/auth-oauth-app': 8.1.1
-      '@octokit/auth-oauth-user': 5.1.1
+      '@octokit/auth-oauth-app': 8.1.2
+      '@octokit/auth-oauth-user': 5.1.2
       '@octokit/auth-unauthenticated': 6.1.0
       '@octokit/core': 6.1.3
       '@octokit/oauth-authorization-url': 7.1.1
@@ -25705,14 +25705,14 @@ snapshots:
       '@octokit/core': 4.2.4(encoding@0.1.13)
       '@octokit/types': 10.0.0
 
-  '@octokit/plugin-retry@7.1.2(@octokit/core@6.1.3)':
+  '@octokit/plugin-retry@7.1.3(@octokit/core@6.1.3)':
     dependencies:
       '@octokit/core': 6.1.3
       '@octokit/request-error': 6.1.6
       '@octokit/types': 13.6.2
       bottleneck: 2.19.5
 
-  '@octokit/plugin-throttling@9.3.2(@octokit/core@6.1.3)':
+  '@octokit/plugin-throttling@9.3.3(@octokit/core@6.1.3)':
     dependencies:
       '@octokit/core': 6.1.3
       '@octokit/types': 13.6.2
@@ -30017,7 +30017,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.26.0
       '@babel/helper-define-polyfill-provider': 0.6.3(@babel/core@7.26.0)
-      core-js-compat: 3.39.0
+      core-js-compat: 3.40.0
     transitivePeerDependencies:
       - supports-color
 
@@ -31301,15 +31301,15 @@ snapshots:
       serialize-javascript: 6.0.2
       webpack: 5.97.1(@swc/core@1.10.6(@swc/helpers@0.5.15))
 
-  core-js-compat@3.39.0:
+  core-js-compat@3.40.0:
     dependencies:
       browserslist: 4.24.3
 
-  core-js-pure@3.39.0: {}
+  core-js-pure@3.40.0: {}
 
   core-js@2.6.12: {}
 
-  core-js@3.39.0: {}
+  core-js@3.40.0: {}
 
   core-util-is@1.0.2: {}
 
@@ -37986,8 +37986,8 @@ snapshots:
       '@octokit/plugin-paginate-graphql': 5.2.4(@octokit/core@6.1.3)
       '@octokit/plugin-paginate-rest': 11.3.6(@octokit/core@6.1.3)
       '@octokit/plugin-rest-endpoint-methods': 13.2.6(@octokit/core@6.1.3)
-      '@octokit/plugin-retry': 7.1.2(@octokit/core@6.1.3)
-      '@octokit/plugin-throttling': 9.3.2(@octokit/core@6.1.3)
+      '@octokit/plugin-retry': 7.1.3(@octokit/core@6.1.3)
+      '@octokit/plugin-throttling': 9.3.3(@octokit/core@6.1.3)
       '@octokit/request-error': 6.1.6
       '@octokit/types': 13.6.2
 
