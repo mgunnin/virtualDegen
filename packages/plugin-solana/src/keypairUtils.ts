@@ -71,8 +71,8 @@ export async function getWalletKey(
         }
     } else {
         const publicKeyString =
-            runtime?.getSetting("SOLANA_PUBLIC_KEY") ??
-            runtime?.getSetting("WALLET_PUBLIC_KEY");
+            runtime.getSetting("SOLANA_PUBLIC_KEY") ??
+            runtime.getSetting("WALLET_PUBLIC_KEY");
 
         if (!publicKeyString) {
             throw new Error("Public key not found in settings");
