@@ -4,74 +4,40 @@ A powerful plugin for Eliza that integrates with Birdeye's comprehensive DeFi an
 
 ## Features
 
-- **DeFi Analytics**
+### Provider Featurs
 
-    - Real-time price and trading data
-    - Historical price tracking
-    - OHLCV (Open, High, Low, Close, Volume) data
-    - Trade analysis for tokens and pairs
+- **Wallet Portfolio Provider**
 
-- **Token Intelligence**
+    - If `BIRDEYE_WALLET_ADDR` is set, this provider will fetch the wallet's portfolio data from Birdeye and be able to respond to questions
 
-    - Comprehensive token metadata
-    - Security information
-    - Token holder analytics
-    - Mint and burn tracking
-    - Market trends and new listings
+- **Wallet Search Provider**
 
-- **Wallet Analysis**
+    - If the user mentions a wallet address, this provider will search for the address in Birdeye and be able to provide information about the wallet. This includes support for multiple addresses in the same message.
 
-    - Multi-chain portfolio tracking
-    - Token balance monitoring
-    - Transaction history analysis
-    - Cross-chain analytics
+- **Symbol Search Provider**
 
-- **Market Research**
-    - Gainers and losers tracking
-    - Trending tokens
-    - Top trader analysis
-    - Market pair analytics
+    - If the user mentions a token symbol such as $SOL, $ETH or any random token symbol, this provider will search for the symbol in Birdeye and be able to provide information about the token. This includes support for multiple symbols in the same message.
+        - i.e. "Tell me about $SOL and $PEPE"
 
-## Installation
+- **Address Search Provider**
 
-```bash
-npm install @eliza/plugin-birdeye
-```
+    - If the user mentions a token address, this provider will search for the address in Birdeye and be able to provide information about the token. This includes support for multiple addresses in the same message.
+        - i.e. "Tell me about 0x1234567890 and 0x9876543210"
 
-## Configuration
+### Action Features
 
-Add the following to your Eliza configuration:
+- **Report Token**
 
-```typescript
-import { BirdeyePlugin } from "@eliza/plugin-birdeye";
-
-export default {
-    plugins: [
-        new BirdeyePlugin({
-            apiKey: "YOUR_BIRDEYE_API_KEY",
-        }),
-    ],
-};
-```
-
-## Environment Variables
-
-```
-BIRDEYE_API_KEY=your_api_key_here
-```
-
-## Usage
-
-Once configured, the plugin provides access to Birdeye data through Eliza's interface.
+    - This action will report on the current details of the wallet specified in the `BIRDEYE_WALLET_ADDR` setting.
 
 ## API Reference
 
-The plugin provides access to all Birdeye API endpoints through structured interfaces. For detailed API documentation, visit [Birdeye's API Documentation](https://public-api.birdeye.so).
+The plugin provides access to a subset of Birdeye API endpoints through structured interfaces. For detailed API documentation, visit [Birdeye's API Documentation](https://public-api.birdeye.so).
 
 ## License
 
-MIT
+See parent project for license information.
 
 ## Contributing
 
-Contributions are welcome! Please read our contributing guidelines before submitting pull requests.
+Contributions are welcome! See parent project for contribution guidelines.

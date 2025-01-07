@@ -1,57 +1,20 @@
 import { Plugin } from "@elizaos/core";
-import {
-    gainersLosersProvider,
-    ohlcvProvider,
-    pairOverviewProvider,
-    priceMultipleProvider,
-    priceProvider,
-    priceVolumeProvider,
-    tokenCreationProvider,
-    tokenListProvider,
-    tokenMarketDataProvider,
-    tokenOverviewProvider,
-    tokenSecurityProvider,
-    tokenTradeProvider,
-    tradesSeekProvider,
-    transactionHistoryProvider,
-    trendingTokensProvider,
-    walletPortfolioProvider,
-} from "./providers";
+import { tokenSearchAddressAction } from "./actions/token-search-address";
+import { tokenSearchSymbolAction } from "./actions/token-search-symbol";
+import { walletSearchAddressAction } from "./actions/wallet-search-address";
+import { agentPortfolioProvider } from "./providers/agent-portfolio-provider";
 
 export const birdeyePlugin: Plugin = {
     name: "birdeye",
     description: "Birdeye Plugin for token data and analytics",
-    actions: [],
-    evaluators: [],
-    providers: [
-        // DeFi providers
-        priceProvider,
-        priceMultipleProvider,
-        ohlcvProvider,
-        priceVolumeProvider,
-
-        // Pair providers
-        pairOverviewProvider,
-
-        // Search providers
-        tokenMarketDataProvider,
-
-        // Token providers
-        tokenOverviewProvider,
-        tokenSecurityProvider,
-        tokenListProvider,
-        trendingTokensProvider,
-        tokenCreationProvider,
-        tokenTradeProvider,
-
-        // Trader providers
-        gainersLosersProvider,
-        tradesSeekProvider,
-
-        // Wallet providers
-        transactionHistoryProvider,
-        walletPortfolioProvider,
+    actions: [
+        tokenSearchSymbolAction,
+        tokenSearchAddressAction,
+        walletSearchAddressAction,
+        // testAllEndpointsAction, // this action can be used to optionally test all endpoints
     ],
+    evaluators: [],
+    providers: [agentPortfolioProvider],
 };
 
 export default birdeyePlugin;

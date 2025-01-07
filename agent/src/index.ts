@@ -37,6 +37,7 @@ import { ThreeDGenerationPlugin } from "@elizaos/plugin-3d-generation";
 import { abstractPlugin } from "@elizaos/plugin-abstract";
 import { aptosPlugin } from "@elizaos/plugin-aptos";
 import { avalanchePlugin } from "@elizaos/plugin-avalanche";
+import { birdeyePlugin } from "@elizaos/plugin-birdeye";
 import {
     advancedTradePlugin,
     coinbaseCommercePlugin,
@@ -525,6 +526,7 @@ export async function createAgent(
         plugins: [
             bootstrapPlugin,
             webSearchPlugin,
+            birdeyePlugin,
             // newsPlugin,
             getSecret(character, "CONFLUX_CORE_PRIVATE_KEY")
                 ? confluxPlugin

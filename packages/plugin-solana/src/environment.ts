@@ -1,6 +1,18 @@
 import { IAgentRuntime } from "@elizaos/core";
 import { z } from "zod";
 
+// Add debug logging
+console.log("Loading Solana environment variables:", {
+    WALLET_SECRET_SALT: process.env.WALLET_SECRET_SALT,
+    WALLET_SECRET_KEY: process.env.WALLET_SECRET_KEY,
+    WALLET_PUBLIC_KEY: process.env.WALLET_PUBLIC_KEY,
+    SOL_ADDRESS: process.env.SOL_ADDRESS,
+    SLIPPAGE: process.env.SLIPPAGE,
+    RPC_URL: process.env.RPC_URL,
+    HELIUS_API_KEY: process.env.HELIUS_API_KEY,
+    BIRDEYE_API_KEY: process.env.BIRDEYE_API_KEY,
+});
+
 export const solanaEnvSchema = z
     .object({
         WALLET_SECRET_SALT: z.string().optional(),
