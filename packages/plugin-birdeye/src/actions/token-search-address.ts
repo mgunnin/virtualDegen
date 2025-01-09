@@ -220,7 +220,9 @@ const formatTokenReport = (
         output += `\n`;
         output += `Token Overview:\n`;
         output += `📝 Name: ${result.overview.data.name}\n`;
-        output += `🔖 Symbol: ${result.overview.data.symbol.toUpperCase()}\n`;
+        output += result.overview.data.symbol
+            ? `🔖 Symbol: ${result.overview.data.symbol.toUpperCase()}\n`
+            : "";
         output += `🔗 Address: ${address.address}\n`;
         output += `🔢 Decimals: ${result.overview.data.decimals}\n`;
         output += ``;

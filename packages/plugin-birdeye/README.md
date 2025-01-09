@@ -6,29 +6,24 @@ A powerful plugin for Eliza that integrates with Birdeye's comprehensive DeFi an
 
 ### Provider Featurs
 
-- **Wallet Portfolio Provider**
+- **Agent Portfolio Provider**
 
-    - If `BIRDEYE_WALLET_ADDR` is set, this provider will fetch the wallet's portfolio data from Birdeye and be able to respond to questions
-
-- **Wallet Search Provider**
-
-    - If the user mentions a wallet address, this provider will search for the address in Birdeye and be able to provide information about the wallet. This includes support for multiple addresses in the same message.
-
-- **Symbol Search Provider**
-
-    - If the user mentions a token symbol such as $SOL, $ETH or any random token symbol, this provider will search for the symbol in Birdeye and be able to provide information about the token. This includes support for multiple symbols in the same message.
-        - i.e. "Tell me about $SOL and $PEPE"
-
-- **Address Search Provider**
-
-    - If the user mentions a token address, this provider will search for the address in Birdeye and be able to provide information about the token. This includes support for multiple addresses in the same message.
-        - i.e. "Tell me about 0x1234567890 and 0x9876543210"
+    - If `BIRDEYE_WALLET_ADDR` is set, this provider will fetch the wallet's portfolio data from Birdeye and be able to respond to questions related to the wallet's holdings.
 
 ### Action Features
 
-- **Report Token**
+- **Token Search Address**
 
-    - This action will report on the current details of the wallet specified in the `BIRDEYE_WALLET_ADDR` setting.
+    - This action will search input message for token addresses and when present will query Birdeye for token information
+
+- **Token Search Symbol**
+
+    - This action will search input message for token symbols in the format of `$SYMBOL` and when present will query Birdeye for token information. Note that this action currently only supports SOL, SUI, and ETH addresses.
+        - _Any addresses that look like EVM addresses will be treated as ETH addresses since there is no easy way to distinguish between the other EVM chains that are supported by Birdeye_.
+
+- **Wallet Search Address**
+
+    - This action will search input message for wallet addresses and when present will query Birdeye for wallet information
 
 ## API Reference
 
